@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login</title>
+	<title>Register</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,7 +28,7 @@
 				<form class="login100-form validate-form" method="POST" action="{% url 'login' %}">
 					{% csrf_token %}
 					<span class="login100-form-title">
-					User Login
+						User Registration
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required">
@@ -48,7 +48,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">Login</button>
+						<button class="login100-form-btn">Register</button>
 					</div>
 
 					<div class="text-center p-t-12">
@@ -57,7 +57,7 @@
 					</div>
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="{% url 'register' %}">Create your Account
+						<a class="txt2" href="{% url 'login' %}">already have an account?login
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>

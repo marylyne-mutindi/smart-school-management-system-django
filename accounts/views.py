@@ -13,3 +13,9 @@ def login_view(request):
         # Handle login logic here
         pass
     return render(request, 'accounts/login.html')
+
+def register_view(request):
+    if request.method == 'POST':
+        # Handle registration logic here
+        pass
+    return render(request, 'accounts/Register.html')
